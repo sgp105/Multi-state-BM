@@ -12,7 +12,6 @@ ext = Extension(
     "hmm_bw",
     ["hmm_bw.pyx"],
     include_dirs=[np.get_include()],
-    # define_macros=[("NPY_NO_DEPRECATED_API","NPY_1_7_API_VERSION")],  # ← 주석/삭제
     extra_compile_args=compile_args,
 )
 
